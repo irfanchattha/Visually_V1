@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Visually]">
+  <listeners>
+    <listener class-name="com.Visual.ly.utilities.Reporting"/>
+  </listeners>
+  <test thread-count="5" name="Visually Test(failed)">
+    <parameter name="server" value="Stage"/>
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.Visual.ly.testCases.TC_LoginTest_001">
+        <methods>
+          <include name="setup"/>
+          <include name="loginTest"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.Visual.ly.testCases.TC_LoginTest_001 -->
+      <class name="com.Visual.ly.testCases.TC_Logout_002">
+        <methods>
+          <include name="setup"/>
+          <include name="tearDown"/>
+          <include name="logOut"/>
+        </methods>
+      </class> <!-- com.Visual.ly.testCases.TC_Logout_002 -->
+    </classes>
+  </test> <!-- Visually Test(failed) -->
+</suite> <!-- Failed suite [Visually] -->
